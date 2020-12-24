@@ -63,8 +63,17 @@ let movie = ['the walking dead', 'friends', 'how i met your mother'];
 
 
 //a quiz with 4 choices,
-var nhap_dap_an = prompt("nhap dap an")
-if (nhap_dap_an  in [1,2,3,4]) {
-    alert("oke")
-}
-else alert("???")
+let quiz = prompt('How many legs does a spider have? \n\
+                1, None \n\
+                2, 4 legs \n\
+                3, 8 legs \n\
+                4, 12 legs')
+let array = [1, 2, 3, 4]
+
+
+if (quiz ==3 && quiz in array) {
+    alert('Bravo, you are correct')
+} else if (quiz != 3 && quiz in array) {
+    alert('Good luck next time')
+} else alert('out of range')
+

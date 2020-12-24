@@ -21,7 +21,7 @@
 // const a = [4, 57, -8];
 // console.log(...a);
 
-//4 
+// 4 
 // let result = ['Jean', 'T-Shirt', 'Sock']
 // let ask = prompt("welcome to my shop, what do you want").toUpperCase()
 

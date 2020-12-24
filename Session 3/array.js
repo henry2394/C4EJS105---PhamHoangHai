@@ -63,17 +63,25 @@ let movie = ['the walking dead', 'friends', 'how i met your mother'];
 
 
 //a quiz with 4 choices,
-let quiz = prompt('How many legs does a spider have? \n\
-                1, None \n\
-                2, 4 legs \n\
-                3, 8 legs \n\
-                4, 12 legs')
-let array = [1, 2, 3, 4]
+// let quiz = prompt('How many legs does a spider have? \n\
+//                 1, None \n\
+//                 2, 4 legs \n\
+//                 3, 8 legs \n\
+//                 4, 12 legs')
+// let array = [1, 2, 3, 4]
 
 
-if (quiz ==3 && quiz in array) {
-    alert('Bravo, you are correct')
-} else if (quiz != 3 && quiz in array) {
-    alert('Good luck next time')
-} else alert('out of range')
+// if (quiz ==3 && quiz in array) {
+//     alert('Bravo, you are correct')
+// } else if (quiz != 3 && quiz in array) {
+//     alert('Good luck next time')
+// } else alert('out of range')
+
+// BT them
+// let nhap_so = prompt('Nhap day so muon sort, cach nhau boi dau (,)')
+// let array = []
+// array = nhap_so.split(',')
+// array.sort()
+// let unique = [...new Set (array)]
+// console.log(unique)
 

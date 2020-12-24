@@ -22,54 +22,54 @@
 // console.log(...a);
 
 // 4 
-let result = ['Jean', 'T-Shirt', 'Sock']
-let range = ['R','U','C','D']
-let ask = prompt("welcome to my shop, what do you want").toUpperCase()
+// let result = ['Jean', 'T-Shirt', 'Sock']
+// let range = ['R','U','C','D']
+// let ask = prompt("welcome to my shop, what do you want").toUpperCase()
 
-if (ask == 'R' ) {
-    for (item of result) {
-        console.log((result.indexOf(item) + 1) + '.' + `${item}`)
-    }
-} else if (ask == 'C' ) {
-    let C = prompt("Enter the name of item")
-    result.push(C)
-    alert('done')
-    console.log(result)
-    let ask2 = prompt("what do you want next (C,R,U,D)").toUpperCase()
-    if (ask2 == 'R') {
-        for (item of result) {
-            console.log((result.indexOf(item) + 1) + '.' + `${item}`)
-        }
-    } 
-} else if (ask == 'U') {
-    let u = prompt('what position do you want to update')
-    if (Number(u) > 2) {
-        alert("cannot update")
-    }
-    else if (u <= 2) {
-        let kq = prompt('enter the name')
-        result[u] = kq
-        alert('Done')
-        let ask2 = prompt('what you want to do next (C,R,U,D) ?').toUpperCase()
-        if (ask2 == 'R'){
-            for (item of result) {
-                console.log((result.indexOf(item) + 1) + '.' + `${item}`)}
-        }
-    }
-} else if (ask == 'D' ) {
-    let D = prompt('enter the position you want to delete')
-    if(Number(D) > 2) {
-        alert("It out of range")
-    } else if (Number(D) <= 2) {
-        result.splice(D,1)
-        alert('Done')
-        let ask3 = prompt('what do you want to do next (C,R,U,D)').toUpperCase()
-        if(ask3 == 'R') {
-            for (item of result) {
-                console.log((result.indexOf(item) + 1) + '.' + `${item}`)}
-        }
-    }
-} else alert('???')
+// if (ask == 'R' ) {
+//     for (item of result) {
+//         console.log((result.indexOf(item) + 1) + '.' + `${item}`)
+//     }
+// } else if (ask == 'C' ) {
+//     let C = prompt("Enter the name of item")
+//     result.push(C)
+//     alert('done')
+//     console.log(result)
+//     let ask2 = prompt("what do you want next (C,R,U,D)").toUpperCase()
+//     if (ask2 == 'R') {
+//         for (item of result) {
+//             console.log((result.indexOf(item) + 1) + '.' + `${item}`)
+//         }
+//     } 
+// } else if (ask == 'U') {
+//     let u = prompt('what position do you want to update')
+//     if (Number(u) > 2) {
+//         alert("cannot update")
+//     }
+//     else if (u <= 2) {
+//         let kq = prompt('enter the name')
+//         result[u] = kq
+//         alert('Done')
+//         let ask2 = prompt('what you want to do next (C,R,U,D) ?').toUpperCase()
+//         if (ask2 == 'R'){
+//             for (item of result) {
+//                 console.log((result.indexOf(item) + 1) + '.' + `${item}`)}
+//         }
+//     }
+// } else if (ask == 'D' ) {
+//     let D = prompt('enter the position you want to delete')
+//     if(Number(D) > 2) {
+//         alert("It out of range")
+//     } else if (Number(D) <= 2) {
+//         result.splice(D,1)
+//         alert('Done')
+//         let ask3 = prompt('what do you want to do next (C,R,U,D)').toUpperCase()
+//         if(ask3 == 'R') {
+//             for (item of result) {
+//                 console.log((result.indexOf(item) + 1) + '.' + `${item}`)}
+//         }
+//     }
+// } else alert('???')
 
 
 ///5
@@ -129,3 +129,23 @@ if (ask == 'R' ) {
 // console.log('My flock has size ' +  `${sum}` +'\n\
 //             i would get ' + `${sum} *2 = ` + sum*2 )
 
+
+//10 
+// let nhap_ten = prompt('nhap ten: ');
+// let first_array = [];
+// first_array = nhap_ten.split(',');
+// console.log(first_array);
+
+// next_array = first_array.map( x => '<'+ x + '>')
+// alert(first_array + ' => '+ next_array)
+
+
+//11
+
+let nhap_so = prompt('nhap so: ');
+let first_array = [];
+first_array = nhap_so.split(',');
+console.log(first_array);
+
+let result = first_array.filter(x => x%2 != 0)
+alert(first_array +' => ' + result)

@@ -51,7 +51,7 @@
 
 // Video 5: Array of Objects (after 4)
 //1 create array of Objects
-let movie = [{ title: 'The walking dead', year: 2020, rate: 8.2 }, { title: 'How i met your mother', year: 2000, rate: 9.2 }, { title: 'Friends', year: 1998, rate: 8.5 }]
+// let movie = [{ title: 'The walking dead', year: 2020, rate: 8.2 }, { title: 'How i met your mother', year: 2000, rate: 9.2 }, { title: 'Friends', year: 1998, rate: 8.5 }]
 
 //2 Print or log out the first movie from movie lis
 // console.log(movie[0])
@@ -83,3 +83,21 @@ let movie = [{ title: 'The walking dead', year: 2020, rate: 8.2 }, { title: 'How
 //Video 6: Object containing array
 // Create an object named movie, with title, year and rate and characters.
 //  The characters contain at least 3 characters of the movie
+// let movie = { title: 'The walking dead', year: 2020, rate: 8.2 , Casts: ['Billy','Jame','Jena']}
+// console.log(movie.title)
+// console.log(movie.year)
+// console.log(movie.rate)
+// console.log(movie.Casts[1])
+
+// Video 7: Object and Array mix structure
+let movie = [{ title: 'The walking dead', year: 2020, rate: 8.2, casts:'billy' },
+             { title: 'How i met your mother', year: 2000, rate: 9.2, casts:'henrry' }, 
+             { title: 'Friends', year: 1998, rate: 8.5, casts:'lena' }]
+
+for (phim in movie) {
+    console.log( movie[phim].title)
+    console.log('year: ' +movie[phim].year)
+    console.log('rate: ' +movie[phim].rate)
+    console.log('casts: '+movie[phim].casts)
+    console.log('-------------------')
+}

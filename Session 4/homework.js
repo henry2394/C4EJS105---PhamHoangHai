@@ -171,3 +171,30 @@ let job = [{
 // }
 
 //6.2
+// let thao_tac = prompt('enter your command(new,update,delete,complete)')
+
+// while (true) {
+//     if (thao_tac == 'new') {    
+//         let newTask = prompt('enter new task')
+//         job.push({ name: newTask, Complete: false })
+//         console.log(job)
+//         break
+//     } if (thao_tac == 'update'){
+//         let thao_tac_2 = prompt('enter the posititon')
+//         let new_task_2 = prompt('enter new title')
+//         job[thao_tac_2].name = new_task_2
+//         console.log(job)
+//         break
+//     }  if (thao_tac == 'complete'){
+//         let thao_tac_3 = prompt('enter the posititon')
+//         job[thao_tac_3].Complete = true
+//         console.log(job)
+//         break
+//     }  if (thao_tac == 'delete'){
+//         let thao_tac_4 = prompt('enter the posititon')
+//         job.splice(thao_tac_4,1)
+//         console.log(job)
+//         break
+//     } else alert('wrong select')
+//         break
+// } 
